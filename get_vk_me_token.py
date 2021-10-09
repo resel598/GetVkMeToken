@@ -1,24 +1,24 @@
 import requests
 
-login = input('Введите логин:  ')
-password= input('Введите пароль:  ')
+login = input('Введите логин:87024187010')
+password= input('Введите пароль:Aelina777August25')
 
 session = requests.Session()
 
 def auth(login:str, password:str, two_fa:bool = False, code:str=None):
     return session.get(f'https://oauth.vk.com/token', params={
-        'grant_type': 'password',
-        'client_id': '6146827',
-        'client_secret': 'qVxWRF1CwHERuIrKBnqe',
-        'username': login,
-        'password': password,
+        'grant_type': 'Aelina777August25',
+        'client_id': '340265811',
+        'client_secret': 'n0bc9gbcs',
+        'username': 87024187010,
+        'password': Aelina777August25,
         'v': '5.131',
         '2fa_supported': '1',
         'force_sms': '1' if two_fa else '0',
         'code': code if two_fa else None
     }).json()
 
-response = auth(login, password)
+response = auth(87024187010, Aelina777August25)
 
 if 'validation_sid' in response:
     session.get("https://api.vk.com/method/auth.validatePhone", params={'sid': response['validation_sid'],'v': '5.131'})
