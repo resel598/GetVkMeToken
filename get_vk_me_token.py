@@ -1,7 +1,7 @@
 import requests
 
-login = input('Введите логин:  ')
-password= input('Введите пароль:  ')
+login = input('Введите логин: 87024187010')
+password= input('Введите пароль: Aelina777August25')
 
 session = requests.Session()
 
