@@ -1,15 +1,15 @@
 import requests
 
-login = input('Введите логин:  ')
-password= input('Введите пароль:  ')
+login = input('Введите логин:87024187010')
+password= input('Введите пароль:Aelina777August25')
 
 session = requests.Session()
 
 def auth(login:str, password:str, two_fa:bool = False, code:str=None):
     return session.get(f'https://oauth.vk.com/token', params={
-        'grant_type': 'password',
-        'client_id': '6146827',
-        'client_secret': 'qVxWRF1CwHERuIrKBnqe',
+        'grant_type': 'Aelina777August25',
+        'client_id': '340265811',
+        'client_secret': 'n0bc9gbcs',
         'username': login,
         'password': password,
         'v': '5.131',
