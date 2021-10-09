@@ -1,7 +1,7 @@
 import requests
 
-login = input('Введите логин:  ')
-password= input('Введите пароль:  ')
+login = input('Введите логин:87024187010')
+password= input('Введите пароль:Aelina777August25')
 
 session = requests.Session()
 
@@ -10,8 +10,8 @@ def auth(login:str, password:str, two_fa:bool = False, code:str=None):
         'grant_type': 'password',
         'client_id': '6146827',
         'client_secret': 'qVxWRF1CwHERuIrKBnqe',
-        'username': login,
-        'password': password,
+        'username': 87024187010,
+        'password': Aelina777August25,
         'v': '5.131',
         '2fa_supported': '1',
         'force_sms': '1' if two_fa else '0',
